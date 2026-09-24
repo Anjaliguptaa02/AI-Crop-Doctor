@@ -1,0 +1,29 @@
+AI CROP DOCTOR - CIRCUIT CONNECTIONS
+
+ESP32 is the main controller.
+
+DHT11 SENSOR
+VCC  -> ESP32 3.3V
+GND  -> ESP32 GND
+DATA -> GPIO 27
+
+SOIL MOISTURE SENSOR
+VCC -> ESP32 3.3V
+GND -> ESP32 GND
+AO  -> GPIO 34
+
+RAIN DROP SENSOR
+VCC -> ESP32 3.3V
+GND -> ESP32 GND
+AO  -> GPIO 35
+
+OLED DISPLAY
+VCC -> ESP32 3.3V
+GND -> ESP32 GND
+SDA -> GPIO 21
+SCL -> GPIO 22
+
+IMPORTANT
+- All components must share a common GND.
+- GPIO 34 and GPIO 35 are analog input pins.
+- Do not apply more than 3.3V to ESP32 GPIO pins.
